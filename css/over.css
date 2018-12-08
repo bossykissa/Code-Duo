@@ -4,16 +4,11 @@
 
 /* if i have to rewrite jumbotron */
 .jumbotron {
-  background-image: url('../images/fruit-and-veg.jpg');
   background-size: cover;
   background-attachment: fixed;
   min-height: 600px;
 }
 
-#mission {
-background: rgba(32, 35, 41, 0.9);
-color: #ddd;
-}
 
 body {
   padding-top: 70px;
