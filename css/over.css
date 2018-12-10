@@ -14,17 +14,34 @@ body {
   padding-top: 70px;
 }
 
-.btn-twitter{
-  background:#00acee;
-  border-color:#009ad5;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.btn-facebook {
-  background: #4868ac;
-  border-color: #314776;
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
 
-.btn-pinterest {
-  background: #b62f26;
-  border-color: #b62f26;
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #C61118;
+  color: white;
 }
