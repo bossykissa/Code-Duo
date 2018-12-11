@@ -246,7 +246,7 @@
 </div>
 </div>
 
-<script>
+<!-- <script>
 // Activate Carousel
 $("#myCarousel").carousel();
 
@@ -260,6 +260,14 @@ $(".left").click(function(){
     $("#myCarousel").carousel("prev");
 });
 
+</script> -->
+
+<script>
+  !function ($) {
+    $(function() {
+      $('.carousel').carousel({ interval: 2500 })
+    });
+}(window.jQuery);
 </script>
 
 <script>
