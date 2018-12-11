@@ -2,6 +2,14 @@
   color:powderblue;
 }
 
+.rowscrollToTopContainer {
+  text-align: center;
+}
+
+.bottomLinks {
+  text-align: center;
+}
+
 /* if i have to rewrite jumbotron */
 .jumbotron {
   /* background-image: url('../images/map.jpg'); */
