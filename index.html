@@ -6,9 +6,8 @@
   <link href='css/over.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
@@ -32,14 +31,14 @@
         <li><a href="about.html">About</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="https://www.facebook.com/">Facebook Page</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Blog post 1</a></li>
+            <li><a href="#">Blog post 2</a></li>
+            <li><a href="#">Blog post 3</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Blog Directory</a></li>
           </ul>
         </li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#"><span onclick="openNav()">Contact Us</span></a></li>
       </ul>
 
       <form class="navbar-form navbar-left pull-right" role="search">
@@ -84,16 +83,16 @@
       <div class="item active">
         <img src="http://www.marcosdetourist.com/wp/wp-content/uploads/2015/05/121210_170658.jpg" alt="Image">
         <div class="carousel-caption">
-          <h1> Follow Our Footsteps! </h1>
-          <h2> Travel and Discover</h2>
+          <h1>Follow Our Footsteps! </h1>
+          <h2>Travel and Discover</h2>
         </div>
       </div>
 
       <div class="item">
-        <img src="http://www.marcosdetourist.com/wp/wp-content/uploads/2015/05/121210_170658.jpg" alt="Image">
+        <img src="https://stmed.net/sites/default/files/carousel-wallpapers-28482-2733643.jpg" alt="Image2">
         <div class="carousel-caption">
-          <h3>Follow Your Heart</h3>
-          <p>Lorem ipsum...</p>
+          <h1>Follow Your Heart</h1>
+          <h2>Lorem ipsum...</>
         </div>
       </div>
     </div>
@@ -111,6 +110,23 @@
 
   <div class="container">
     <h3> Get Inspired </h3>
+
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Chatbot1</a>
+        <a href="#">Chatbot2</a>
+      </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+
+
     <div class="row">
       <div class="col-md-4">
         <div class="thumbnail">
@@ -160,7 +176,6 @@
     <!-- </div> -->
   </div>
 </div>
-
 
 
 <div class="row siteFooter">
@@ -227,16 +242,59 @@
           </div>
       </div>
   </div>
+
 </div>
 </div>
 
+<script>
+// Activate Carousel
+$("#myCarousel").carousel();
 
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
 
+// Enable Carousel Controls
+$(".left").click(function(){
+    $("#myCarousel").carousel("prev");
+});
 
+</script>
 
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
+<script>
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "15%";
+}
 
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 <!-- >>>>>>> 7b5616f136fd85f17525115c9cd1c74041052d6c -->
 
