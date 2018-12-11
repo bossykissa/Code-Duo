@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Travel Duo - About </title>
+  <title> Travel Duo - travel advice, tips and stories</title>
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link href='css/over.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,29 +25,12 @@
         <!-- <a class="navbar-brand" href="#">Home</a> INSERT LOGO -->
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home
-          <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-
-      <form class="navbar-form navbar-left pull-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search..." >
-            <button type="submit" class="btn btn-default" aria-label="Search" >
-              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            </button>
-        </div>
-      </form>
-
-      <ul class="nav navbar-nav navbar-right">
-      <!-- <li><a href="#">Link</a></li> -->
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
-          <span class="caret"></span></a>
+        <li ><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="https://www.facebook.com/">Facebook Page</a></li>
             <li><a href="#">Another action</a></li>
@@ -55,36 +39,66 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-left pull-right" role="search">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search..." >
+          <button type="submit" class="btn btn-default" aria-label="Search" >
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href="#">Link</a></li> -->
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<body>
+
+
+
+
   <div class="jumbotron">
     <div class="container">
       <div class = "top">
         <div class="text-center">
           <h1> About Us </h1>
-<<<<<<< HEAD
 
-=======
->>>>>>> 7b5616f136fd85f17525115c9cd1c74041052d6c
         </div>
       </div>
     </div>
   </div>
-<div class="forms">
-  <iframe src= "https://docs.google.com/forms/d/e/1FAIpQLSe4A6q371r_QfIFnwkQTizMvQZ_qPAovqjvHzFYvkCK2AVrsQ/viewform?usp=pp_url"></iframe>
-</div>
 
-<div id= "footer">
-    <div id= "social-buttons">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-pinterest"></a>
-    </div>
+  <div class="container">
+    <form role='form'>
+      <label for="email"> Subscribe </label>
+      <input type="text" name="email" >
+      <button class="btn btn-success" type="submit">Send</button>
+    </form>
+  </div>
+
+
+
+    <!-- <div id= "footer">
+      <div id= "social-buttons">
+        <button class= "btn btn-lg btn-twitter">Twitter</button>
+        <button class= "btn btn-lg btn-facebook">Facebook</button>
+        <button class= "btn btn-lg btn-pinterest">Pinterest</button>
+      </div>
+      <div class="panel-footer">Copyright</div>
+    </div> -->
+
+
+  <div id= "social-buttons">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+  </div>
+
+  <div class= "container">
     <div class="panel-footer"> © Copyright</div>
-</div>
-</body>
-</html>
-</body>
+  </div>

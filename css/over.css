@@ -10,6 +10,10 @@
   min-height:800px;
 }
 
+.navbar-inner {
+    background:transparent;
+}
+
 .container {
   /* background-color: white;
   background-opacity:0.2; */
